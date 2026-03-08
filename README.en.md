@@ -28,11 +28,6 @@ Important:
 3. Confirm the installation
 4. Pin the extension if you want faster access
 
-### Microsoft Edge Add-ons
-1. Open the Edge Add-ons page for **Video Summarizer for YouTube**
-2. Click **Get**
-3. Confirm the installation
-
 ## Start the Backend
 
 The extension requires the backend to be running on your machine so it can fetch subtitles.
@@ -188,10 +183,9 @@ docker ps --filter "name=yt-summ-backend"
 ### 429 subtitle errors
 
 If YouTube rate-limits subtitle downloads:
-1. Export your YouTube cookies in Netscape `cookies.txt` format
-2. Mount the file into Docker at `/app/cookies.txt`, or use a local backend setup that reads the same file
-3. Restart the backend
-4. Check `http://localhost:8765/health`
+1. Wait a while before trying again
+2. Avoid repeatedly summarizing many videos in a short period
+3. Make sure the backend is still running, then retry later
 
 ### Provider errors
 

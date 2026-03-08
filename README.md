@@ -2,9 +2,7 @@
 
 [العربية](README.md) | [English](README.en.md)
 
-<div dir="rtl" align="right">
-
-إضافة لمتصفحات Chrome و Edge لتلخيص فيديوهات YouTube باستخدام الذكاء الاصطناعي. تقوم بجلب الترجمة النصية عبر خادم محلي، ثم تنشئ ملخصًا باللغة التي تختارها، وتعمل مع OpenRouter و OpenAI والنماذج المحلية المتوافقة مع OpenAI.
+إضافة لمتصفح `Chrome` لتلخيص فيديوهات `YouTube` باستخدام الذكاء الاصطناعي. تقوم بجلب الترجمة النصية عبر خادم محلي، ثم تنشئ ملخصًا باللغة التي تختارها، وتعمل مع `OpenRouter` و `OpenAI` والنماذج المحلية المتوافقة مع `OpenAI`.
 
 مهم:
 - يجب أن يحتوي الفيديو على ترجمة نصية على YouTube، بما في ذلك الترجمة التلقائية.
@@ -19,27 +17,28 @@
 - أزرار لتكبير وتصغير حجم الخط داخل النافذة
 - واجهة نافذة الملخص مترجمة للغات الملخص المدعومة
 - صفحة الإعدادات متوفرة بالعربية والإنجليزية
-- يعمل مع OpenRouter و OpenAI و Ollama و LM Studio و LocalAI وغيرها من الواجهات المتوافقة مع OpenAI
+- يعمل مع `OpenRouter` و `OpenAI` و `Ollama` و `LM Studio` و `LocalAI` وغيرها من الواجهات المتوافقة مع `OpenAI`
 - اتصالات الذكاء الاصطناعي تذهب مباشرة إلى المزود الذي تضبطه
 
 ## تثبيت الإضافة
 
-### Chrome Web Store
-1. افتح صفحة **Video Summarizer for YouTube** في متجر Chrome
-2. اضغط **Add to Chrome**
+<div align="right">
+
+### `Chrome Web Store`
+
+</div>
+
+1. افتح صفحة **`Video Summarizer for YouTube`** في متجر `Chrome`
+2. اضغط **`Add to Chrome`**
 3. أكّد التثبيت
 4. ثبّت الإضافة في الشريط إذا أردت وصولًا أسرع
 
-### إضافات Microsoft Edge
-1. افتح صفحة **Video Summarizer for YouTube** في متجر إضافات Edge
-2. اضغط **Get**
-3. أكّد التثبيت
 
 ## تشغيل الخادم الخلفي
 
 الإضافة تحتاج إلى تشغيل الخادم الخلفي على جهازك حتى تتمكن من جلب الترجمة النصية.
 
-### الخيار A: تنزيل الملف التنفيذي الجاهز
+### الخيار الأول: تنزيل الملف التنفيذي الجاهز
 
 نزّل الحزمة المناسبة لنظام التشغيل من صفحة **Releases** في هذا المستودع.
 
@@ -54,19 +53,19 @@
 3. شغّل الملف التنفيذي الموجود داخلها
 4. اتركه يعمل أثناء استخدام الإضافة
 
-### ملاحظة macOS
+### ملاحظة `macOS`
 
-الإصدار الحالي من خادم macOS قد يكون غير موقّع.
+الإصدار الحالي من خادم `macOS` قد يكون غير موقّع.
 
-إذا قام macOS بحظره:
-1. افتح **System Settings** ثم **Privacy & Security**
+إذا قام `macOS` بحظره:
+1. افتح **`System Settings`** ثم **`Privacy & Security`**
 2. ابحث عن التحذير الخاص بالتطبيق الذي نزّلته
-3. اضغط **Open Anyway**
+3. اضغط **`Open Anyway`**
 4. أكّد الرسالة الثانية
 
-### الخيار B: Docker
+### الخيار الثاني: `Docker`
 
-إذا كنت تفضّل Docker، شغّل:
+إذا كنت تفضّل `Docker`، شغّل:
 
 ```bash
 docker pull ghcr.io/abdulazizalmalki-gh/video-summarizer-for-yt-backend:latest
@@ -79,16 +78,7 @@ docker run --name yt-summ-backend --rm -p 8765:8765 ghcr.io/abdulazizalmalki-gh/
 docker run -d --name yt-summ-backend -p 8765:8765 ghcr.io/abdulazizalmalki-gh/video-summarizer-for-yt-backend:latest
 ```
 
-تركيب ملف الكوكيز اختياري لتقليل أخطاء YouTube `429`:
-
-```bash
-docker run --name yt-summ-backend --rm \
-  -p 8765:8765 \
-  -v /absolute/path/to/cookies.txt:/app/cookies.txt:ro \
-  ghcr.io/abdulazizalmalki-gh/video-summarizer-for-yt-backend:latest
-```
-
-فحص الصحة:
+فحص الخدمة:
 
 ```bash
 curl http://localhost:8765/health
@@ -97,75 +87,70 @@ curl http://localhost:8765/health
 ## إعداد الإضافة
 
 1. اضغط على أيقونة الإضافة
-2. افتح **Settings**
+2. افتح **`Settings`**
 3. اترك إعدادات الخادم الخلفي كالتالي:
-   - URL: `http://localhost`
-   - Port: `8765`
-4. اضغط **Test Connection**
+   - `URL`: `http://localhost`
+   - `Port`: `8765`
+4. اضغط **`Test Connection`**
 5. اختر مزود الذكاء الاصطناعي
-6. أدخل مفتاح API أو رابط النموذج المحلي
+6. أدخل مفتاح `API` أو رابط النموذج المحلي
 7. احفظ الإعدادات
 
 ## مزودات الذكاء الاصطناعي
 
-### OpenRouter
+### الخيار الأول`OpenRouter`
 
 المزود الافتراضي الموصى به.
 
 الخطوات:
 1. افتح [https://openrouter.ai/keys](https://openrouter.ai/keys)
 2. سجّل الدخول أو أنشئ حسابًا
-3. أنشئ مفتاح API
+3. أنشئ مفتاح `API`
 4. انسخ المفتاح
 5. في إعدادات الإضافة:
-   - اختر **OpenRouter**
+   - اختر **`OpenRouter`**
    - الصق المفتاح
-   - اختياريًا اضغط **Refresh** واختر نموذجًا
-   - اضغط **Save Settings**
+   - اختياريًا اضغط **`Refresh`** واختر نموذجًا
+   - اضغط **`Save Settings`**
 
-### OpenAI
+### الخيار الثاني`OpenAI`
 
 الخطوات:
 1. افتح [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 2. سجّل الدخول أو أنشئ حسابًا
-3. تأكد أن حساب API يحتوي على رصيد أو فوترة مفعلة
-4. أنشئ مفتاح API سري جديد
+3. تأكد أن حساب `API` يحتوي على رصيد أو فوترة مفعلة
+4. أنشئ مفتاح `API` سري جديد
 5. انسخ المفتاح
 6. في إعدادات الإضافة:
-   - اختر **OpenAI**
+   - اختر **`OpenAI`**
    - الصق المفتاح
-   - اضغط **Save Settings**
+   - اضغط **`Save Settings`**
 
-### Local LLM
+### الخيار الثالث `Local LLM`
 
 أمثلة مدعومة:
-- Ollama
-- LM Studio
-- LocalAI
-- أي واجهة أخرى متوافقة مع OpenAI
+- برنامج `Ollama` رابط: `http://localhost:11434`
+- برنامج `LM Studio` رابط : `http://localhost:1234/v1`
+- بيئة `Local LLM` أو أي واجهة أخرى متوافقة مع `OpenAI` : غالباً برابط ينتهي ب `v1/`
 
-روابط شائعة:
-- Ollama: `http://localhost:11434`
-- LM Studio: `http://localhost:1234/v1`
-- LocalAI: غالبًا رابط `/v1` متوافق مع OpenAI
 
 خطوات الإعداد:
 1. شغّل خادم النموذج المحلي
-2. في إعدادات الإضافة اختر **Local LLM**
+2. في إعدادات الإضافة اختر **`Local LLM`**
 3. أدخل الرابط
-4. اضغط **Refresh**
+4. اضغط **`Refresh`**
 5. اختر نموذجًا
-6. اضغط **Save Settings**
+6. اضغط **`Save Settings`**
 
 ## طريقة الاستخدام
 
 1. شغّل الخادم الخلفي
 2. افتح فيديو على YouTube
 3. تأكد أن الفيديو يحتوي على ترجمة نصية وأنه لا يتجاوز 3 ساعات
-4. اضغط الزر العائم **Video Summarizer for YouTube** داخل الصفحة
+4. اضغط الزر العائم **`Video Summarizer for YouTube`** داخل الصفحة
 5. لغة الملخص الافتراضية هي **العربية (Arabic)**
 6. غيّر لغة الملخص إذا أردت
-7. اضغط **Summarize**
+7. اضغط **`Summarize`**
 8. انسخ النتيجة أو غيّر حجم النافذة أو حجم الخط حسب الحاجة
 
 ## استكشاف المشاكل
@@ -174,7 +159,7 @@ curl http://localhost:8765/health
 
 - افحص `http://localhost:8765/health`
 - تأكد أن إعدادات الإضافة ما زالت تشير إلى `http://localhost:8765`
-- إذا كنت تستخدم Docker:
+- إذا كنت تستخدم `Docker`:
 
 ```bash
 docker ps --filter "name=yt-summ-backend"
@@ -190,22 +175,19 @@ docker ps --filter "name=yt-summ-backend"
 ### أخطاء 429
 
 إذا قام YouTube بتقييد تنزيل الترجمة:
-1. صدّر كوكيز YouTube بصيغة Netscape `cookies.txt`
-2. اربط الملف داخل Docker إلى `/app/cookies.txt` أو استخدم إعدادًا محليًا يقرأ الملف نفسه
-3. أعد تشغيل الخادم الخلفي
-4. افحص `http://localhost:8765/health`
+1. انتظر بعض الوقت قبل المحاولة مرة أخرى
+2. لا تكرر طلبات التلخيص بسرعة وعلى عدد كبير من الفيديوهات خلال فترة قصيرة
+3. تأكد أن الخادم الخلفي ما زال يعمل ثم أعد المحاولة لاحقًا
 
 ### أخطاء مزود الذكاء الاصطناعي
 
 - تأكد من اختيار مزود في الإعدادات
-- OpenAI و OpenRouter يحتاجان مفاتيح API صالحة
-- Local LLM يحتاج رابطًا ونموذجًا محددًا
-- اضغط **Save Settings** بعد أي تعديل
+- المزودون `OpenAI` و `OpenRouter` يحتاجان مفاتيح `API` صالحة
+- مزود `Local LLM` يحتاج رابطًا ونموذجًا محددًا
+- اضغط **`Save Settings`** بعد أي تعديل
 
 ## الخصوصية
 
 - جلب الترجمة يتم عبر الخادم المحلي لديك
 - طلبات الذكاء الاصطناعي تذهب مباشرة إلى المزود الذي اخترته
 - مفاتيح المزود تُخزن محليًا في المتصفح
-
-</div>
