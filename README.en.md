@@ -43,15 +43,18 @@ The extension requires the backend to be running on your machine so it can fetch
 Download the correct backend package for your operating system from this repository’s **Releases** page.
 
 Available packages:
-- Linux: `yt-summ-backend-vX.Y.Z-linux-x64.tar.gz`
-- Windows: `yt-summ-backend-vX.Y.Z-windows-x64.zip`
-- macOS (Apple Silicon): `yt-summ-backend-vX.Y.Z-macos-arm64.tar.gz`
+- Linux: `video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64.tar.gz`
+- Windows: `video-summarizer-for-youtube-backend-vX.Y.Z-windows-x64.zip`
+- macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz`
 
 How to run it:
 1. Download the package for your OS
 2. Extract the archive
 3. Run the included executable
 4. Keep it running while using the extension
+
+Windows note:
+- after launching the backend, allow a few seconds for it to appear in the system tray
 
 ### macOS note
 

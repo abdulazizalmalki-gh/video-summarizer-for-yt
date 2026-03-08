@@ -49,15 +49,18 @@
 نزّل الحزمة المناسبة لنظام التشغيل من صفحة **Releases** في هذا المستودع.
 
 الحزم المتوفرة:
-- Linux: `yt-summ-backend-vX.Y.Z-linux-x64.tar.gz`
-- Windows: `yt-summ-backend-vX.Y.Z-windows-x64.zip`
-- macOS (Apple Silicon): `yt-summ-backend-vX.Y.Z-macos-arm64.tar.gz`
+- Linux: `video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64.tar.gz`
+- Windows: `video-summarizer-for-youtube-backend-vX.Y.Z-windows-x64.zip`
+- macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz`
 
 طريقة التشغيل:
 1. نزّل الحزمة المناسبة لنظامك
 2. فك الضغط
 3. شغّل الملف التنفيذي الموجود داخلها
 4. اتركه يعمل أثناء استخدام الإضافة
+
+ملاحظة لمستخدمي `Windows`:
+- بعد تشغيل الخادم، انتظر بضع ثوانٍ حتى يظهر في شريط النظام
 
 ### ملاحظة `macOS`
 
