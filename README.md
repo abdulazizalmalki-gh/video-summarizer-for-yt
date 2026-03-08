@@ -46,7 +46,7 @@
 
 ### الخيار الأول: تنزيل الملف التنفيذي الجاهز
 
-نزّل الحزمة المناسبة لنظام التشغيل من صفحة **Releases** في هذا المستودع.
+نزّل الحزمة المناسبة لنظام التشغيل من [أحدث إصدار](https://github.com/abdulazizalmalki-gh/video-summarizer-for-yt/releases/latest) في هذا المستودع.
 
 الحزم المتوفرة:
 - Linux: `video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64.tar.gz`
@@ -54,7 +54,7 @@
 - macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz`
 
 طريقة التشغيل:
-1. نزّل الحزمة المناسبة لنظامك
+1. نزّل الحزمة المناسبة لنظامك من [أحدث إصدار](https://github.com/abdulazizalmalki-gh/video-summarizer-for-yt/releases/latest)
 2. فك الضغط
 3. شغّل الملف التنفيذي الموجود داخلها
 4. اتركه يعمل أثناء استخدام الإضافة

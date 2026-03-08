@@ -40,7 +40,7 @@ The extension requires the backend to be running on your machine so it can fetch
 
 ### Option A: Download the backend binary
 
-Download the correct backend package for your operating system from this repository’s **Releases** page.
+Download the correct backend package for your operating system from this repository’s [latest Release](https://github.com/abdulazizalmalki-gh/video-summarizer-for-yt/releases/latest).
 
 Available packages:
 - Linux: `video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64.tar.gz`
@@ -48,7 +48,7 @@ Available packages:
 - macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz`
 
 How to run it:
-1. Download the package for your OS
+1. Download the package for your OS from the [latest Release](https://github.com/abdulazizalmalki-gh/video-summarizer-for-yt/releases/latest)
 2. Extract the archive
 3. Run the included executable
 4. Keep it running while using the extension
