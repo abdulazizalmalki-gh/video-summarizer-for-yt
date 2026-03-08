@@ -20,6 +20,12 @@ Important:
 - Works with OpenRouter, OpenAI, Ollama, LM Studio, LocalAI, and other OpenAI-compatible endpoints
 - Direct-to-provider API calls with no relay server
 
+## Quick Start
+
+1. Install the extension from the Chrome Web Store
+2. Download and run the backend binary, or start the Docker backend
+3. Open the extension settings and configure your AI provider
+
 ## Install the Extension
 
 ### Chrome Web Store
