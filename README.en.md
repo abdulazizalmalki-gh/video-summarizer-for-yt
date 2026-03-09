@@ -55,6 +55,14 @@ How to run it:
 
 Windows note:
 - after launching the backend, allow a few seconds for it to appear in the system tray
+- Windows and desktop Linux packaged apps include a tray toggle: `Allow LAN access (0.0.0.0)`
+
+Linux note:
+- for headless/server use, start the Linux executable with `--bind 0.0.0.0` if you want LAN access
+
+```bash
+./video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64 --bind 0.0.0.0
+```
 
 ### macOS note
 
@@ -107,6 +115,10 @@ curl http://localhost:8765/health
 5. Choose your AI provider
 6. Enter the required API key or local endpoint
 7. Save settings
+
+If you enabled LAN access on another machine:
+- use the backend machine's LAN IP instead of `localhost`, for example `http://192.168.1.50`
+- keep the port as `8765`
 
 ## AI Providers
 
@@ -181,6 +193,8 @@ Local setup steps:
 ```bash
 docker ps --filter "name=yt-summ-backend"
 ```
+
+- If you enabled LAN access with the tray toggle or `--bind 0.0.0.0`, point the extension to the backend machine's LAN IP instead of `localhost`
 
 ### No subtitles found
 
