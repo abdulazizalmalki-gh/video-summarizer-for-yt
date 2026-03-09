@@ -51,7 +51,7 @@
 الحزم المتوفرة:
 - Linux: `video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64.tar.gz`
 - Windows: `video-summarizer-for-youtube-backend-vX.Y.Z-windows-x64.zip`
-- macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz`
+- macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz` ويحتوي على `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.app`
 
 طريقة التشغيل:
 1. نزّل الحزمة المناسبة لنظامك من [أحدث إصدار](https://github.com/abdulazizalmalki-gh/video-summarizer-for-yt/releases/latest)

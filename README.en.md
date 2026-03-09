@@ -45,7 +45,7 @@ Download the correct backend package for your operating system from this reposit
 Available packages:
 - Linux: `video-summarizer-for-youtube-backend-vX.Y.Z-linux-x64.tar.gz`
 - Windows: `video-summarizer-for-youtube-backend-vX.Y.Z-windows-x64.zip`
-- macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz`
+- macOS (Apple Silicon): `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.tar.gz` containing `video-summarizer-for-youtube-backend-vX.Y.Z-macos-arm64.app`
 
 How to run it:
 1. Download the package for your OS from the [latest Release](https://github.com/abdulazizalmalki-gh/video-summarizer-for-yt/releases/latest)
